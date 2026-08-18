@@ -88,8 +88,8 @@ export default function Skills() {
 
   return (
     <section id="skills" ref={container} className="relative min-h-screen py-24 px-6 sm:px-12 lg:px-24 overflow-hidden">
-      {/* Background Decor */}
-      <div className="skills-glow absolute bottom-0 left-0 w-[600px] h-[600px] bg-accent/5 blur-[120px] rounded-full pointer-events-none" />
+      {/* Background Decor (Désactivé sur mobile pour performances) */}
+      <div className="skills-glow hidden md:block absolute bottom-0 left-0 w-[600px] h-[600px] bg-accent/5 blur-[120px] rounded-full pointer-events-none" />
 
       <div className="relative z-10 max-w-7xl mx-auto">
         

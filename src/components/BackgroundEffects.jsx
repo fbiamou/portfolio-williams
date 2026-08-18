@@ -8,7 +8,7 @@ export default function BackgroundEffects() {
   const containerRef = useRef(null);
   const auraRef = useRef(null);
   const particlesRef = useRef([]);
-  const [isMobile, setIsMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState(() => typeof window !== 'undefined' ? window.innerWidth < 768 : false);
 
   useEffect(() => {
     const checkMobile = () => setIsMobile(window.innerWidth < 768);
@@ -94,8 +94,12 @@ export default function BackgroundEffects() {
     return () => ctx.revert();
   }, [isMobile]);
 
+  if (isMobile) {
+    return null; // Désactivation complète des effets de fond sur mobile pour garantir une fluidité maximale
+  }
+
   // Génération des particules uniquement si on est sur Desktop
-  const particles = !isMobile ? Array.from({ length: 15 }).map((_, i) => {
+  const particles = Array.from({ length: 15 }).map((_, i) => {
     const size = Math.random() * 200 + 50; 
     const initialTop = Math.random() * 100;
     const initialLeft = Math.random() * 100;
@@ -117,16 +121,16 @@ export default function BackgroundEffects() {
         }}
       />
     );
-  }) : null;
+  });
 
   return (
     <div ref={containerRef} className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
       {particles}
       
-      {/* Aura optimisée (sans mix-blend-screen lourd sur mobile) */}
+      {/* Aura */}
       <div 
         ref={auraRef}
-        className="absolute top-0 left-0 w-[400px] h-[400px] rounded-full pointer-events-none"
+        className="absolute top-0 left-0 w-[400px] h-[400px] rounded-full pointer-events-none mix-blend-screen"
         style={{
           background: "radial-gradient(circle, rgba(0,168,204,0.35) 0%, rgba(0,168,204,0.1) 40%, rgba(0,0,0,0) 70%)",
           filter: "blur(20px)",

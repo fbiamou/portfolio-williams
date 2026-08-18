@@ -84,8 +84,8 @@ export default function About() {
 
   return (
     <section id="about" ref={container} className="relative min-h-screen py-24 px-6 sm:px-12 lg:px-24 overflow-hidden">
-      {/* Background Decor avec Parallax */}
-      <div className="about-glow absolute top-0 right-0 w-[500px] h-[500px] bg-accent/5 blur-[120px] rounded-full pointer-events-none" />
+      {/* Background Decor avec Parallax (Désactivé sur mobile pour performances) */}
+      <div className="about-glow hidden md:block absolute top-0 right-0 w-[500px] h-[500px] bg-accent/5 blur-[120px] rounded-full pointer-events-none" />
 
       <div className="relative z-10 max-w-7xl mx-auto">
 
