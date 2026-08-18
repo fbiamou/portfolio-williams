@@ -86,7 +86,7 @@ export default function Hero() {
               <ArrowRight className="w-5 h-5 relative z-10 group-hover:translate-x-1 transition-transform" />
             </button>
             
-            <a href="https://gnrwzguu.mychariow.store/" target="_blank" rel="noopener noreferrer" className="hero-btn group relative flex items-center justify-center gap-3 px-8 py-4 bg-surface border border-accent/20 text-textPrimary hover:text-accent font-medium rounded-full transition-all duration-300 hover:-translate-y-2 hover:border-accent/50 hover:bg-surface/50 hover:shadow-[0_0_15px_rgba(0,168,204,0.15)] active:scale-95">
+            <a href="https://williams-biamou.mychariow.com" target="_blank" rel="noopener noreferrer" className="hero-btn group relative flex items-center justify-center gap-3 px-8 py-4 bg-surface border border-accent/20 text-textPrimary hover:text-accent font-medium rounded-full transition-all duration-300 hover:-translate-y-2 hover:border-accent/50 hover:bg-surface/50 hover:shadow-[0_0_15px_rgba(0,168,204,0.15)] active:scale-95">
               <ShoppingBag className="w-5 h-5 transition-transform group-hover:-translate-y-1" />
               <span>Ma Boutique</span>
             </a>
