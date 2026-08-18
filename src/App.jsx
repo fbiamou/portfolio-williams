@@ -44,8 +44,8 @@ function App() {
               y: 0,
               scrollTrigger: {
                 trigger: section,
-                start: "top 100%", // Commence dès que la section touche le bas de l'écran
-                end: "top 90%",   // Est déjà à 100% nette quand elle est entrée de 10%
+                start: "top 100%", // Commence au bas de l'écran
+                end: "top 75%",   // Finit quand elle occupe 25% de l'écran visible (permet de VOIR le flou s'estomper)
                 scrub: 1
               }
             }
