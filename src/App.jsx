@@ -44,8 +44,8 @@ function App() {
               y: 0,
               scrollTrigger: {
                 trigger: section,
-                start: "top 85%", // Commence quand le haut arrive en bas de l'écran
-                end: "top 50%",   // Finit très vite (à la moitié de l'écran), donc l'image est claire rapidement
+                start: "top 100%", // Commence dès que la section touche le bas de l'écran
+                end: "top 90%",   // Est déjà à 100% nette quand elle est entrée de 10%
                 scrub: 1
               }
             }
@@ -60,8 +60,8 @@ function App() {
             filter: "blur(10px)",
             scrollTrigger: {
               trigger: section,
-              start: "bottom 50%", // Ne commence à se flouter QUE quand la section est à moitié sortie
-              end: "bottom 0%",   // Finit de flouter quand elle est totalement sortie
+              start: "bottom 10%", // Commence à flouter SEULEMENT quand elle est 90% sortie
+              end: "bottom 0%",   // Finit de flouter quand elle disparaît
               scrub: 1
             }
           }
