@@ -16,10 +16,10 @@ gsap.registerPlugin(ScrollTrigger)
 
 function App() {
   useEffect(() => {
-    // Configuration Lenis optimisée pour mobile et synchronisée avec GSAP
+    // Configuration Lenis optimisée
     const lenis = new Lenis({
       smoothWheel: true,
-      syncTouch: true // Aide à synchroniser sur mobile
+      syncTouch: false // On désactive sur mobile pour laisser le scroll natif pur
     });
 
     lenis.on('scroll', ScrollTrigger.update);
@@ -31,47 +31,52 @@ function App() {
     gsap.ticker.lagSmoothing(0);
 
     const ctx = gsap.context(() => {
-      // Transitions globales des sections (Flou et Fondu au scroll)
-      const sections = document.querySelectorAll('section');
-      sections.forEach((section, index) => {
-        // Effet d'entrée (Flou -> Net)
-        if (index > 0) {
+      let mm = gsap.matchMedia();
+
+      // On active ces animations LOURDES uniquement sur Tablette et PC (>= 768px)
+      // Sur mobile, l'utilisateur aura un défilement natif parfait, sans effets de flou qui causent des bugs ou des délais.
+      mm.add("(min-width: 768px)", () => {
+        const sections = document.querySelectorAll('section');
+        sections.forEach((section, index) => {
+          // Effet d'entrée (Flou -> Net)
+          if (index > 0) {
+            gsap.fromTo(section, 
+              { opacity: 0.3, filter: "blur(10px)", y: 40 },
+              { 
+                opacity: 1, 
+                filter: "blur(0px)", 
+                y: 0,
+                scrollTrigger: {
+                  trigger: section,
+                  start: "top 100%", // Commence au bas de l'écran
+                  end: "top 75%",   // Finit quand elle occupe 25% de l'écran visible
+                  scrub: 1
+                }
+              }
+            );
+          }
+
+          // Effet de sortie (Net -> Flou)
           gsap.fromTo(section, 
-            { opacity: 0.3, filter: "blur(10px)", y: 40 },
+            { opacity: 1, filter: "blur(0px)" },
             { 
-              opacity: 1, 
-              filter: "blur(0px)", 
-              y: 0,
+              opacity: 0.3, 
+              filter: "blur(10px)",
               scrollTrigger: {
                 trigger: section,
-                start: "top 100%", // Commence au bas de l'écran
-                end: "top 75%",   // Finit quand elle occupe 25% de l'écran visible (permet de VOIR le flou s'estomper)
+                start: "bottom 10%", // Commence à flouter SEULEMENT quand elle est 90% sortie
+                end: "bottom 0%",   // Finit de flouter quand elle disparaît
                 scrub: 1
               }
             }
           );
-        }
-
-        // Effet de sortie (Net -> Flou)
-        gsap.fromTo(section, 
-          { opacity: 1, filter: "blur(0px)" },
-          { 
-            opacity: 0.3, 
-            filter: "blur(10px)",
-            scrollTrigger: {
-              trigger: section,
-              start: "bottom 10%", // Commence à flouter SEULEMENT quand elle est 90% sortie
-              end: "bottom 0%",   // Finit de flouter quand elle disparaît
-              scrub: 1
-            }
-          }
-        );
+        });
       });
     });
 
     return () => {
       lenis.destroy();
-      ctx.revert(); // Nettoyage de GSAP pour éviter les bugs au rechargement
+      ctx.revert(); 
     }
   }, [])
 
