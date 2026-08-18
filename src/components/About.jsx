@@ -85,7 +85,7 @@ export default function About() {
   return (
     <section id="about" ref={container} className="relative min-h-screen py-24 px-6 sm:px-12 lg:px-24 overflow-hidden">
       {/* Background Decor avec Parallax (Désactivé sur mobile pour performances) */}
-      <div className="about-glow hidden md:block absolute top-0 right-0 w-[500px] h-[500px] bg-accent/5 blur-[120px] rounded-full pointer-events-none" />
+      <div className="about-glow hidden md:block absolute top-0 right-0 w-[500px] h-[500px] rounded-full pointer-events-none" style={{ background: 'radial-gradient(circle, rgba(0,168,204,0.10) 0%, transparent 70%)' }} />
 
       <div className="relative z-10 max-w-7xl mx-auto">
 
@@ -105,7 +105,7 @@ export default function About() {
           <div className="about-reveal relative w-full lg:w-[45%] flex justify-center lg:justify-start shrink-0 order-first pointer-events-none lg:-my-8">
             <div className="relative w-[95%] sm:w-[85%] max-w-[500px] lg:max-w-none lg:w-full lg:absolute lg:inset-0 lg:h-full">
               {/* Lueur accent derrière la photo */}
-              <div className="absolute inset-0 bg-accent/8 blur-[70px] pointer-events-none" />
+              <div className="absolute inset-0 pointer-events-none" style={{ background: 'radial-gradient(circle, rgba(0,168,204,0.12) 0%, transparent 70%)' }} />
               {/* Image avec masque radial pour fondu naturel des bords */}
               <img 
                 src="/images/fullbody.png" 

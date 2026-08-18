@@ -60,13 +60,13 @@ export default function Hero() {
   return (
     <section ref={container} className="relative min-h-[100vh] flex flex-col justify-center overflow-hidden px-6 sm:px-12 lg:px-24 pt-32 pb-24 lg:pt-0 lg:pb-0">
       {/* Background Glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-accent/10 blur-[120px] rounded-full pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full pointer-events-none" style={{ background: 'radial-gradient(circle, rgba(0,168,204,0.15) 0%, transparent 70%)' }} />
 
       <div className="relative z-10 max-w-7xl mx-auto w-full flex flex-col lg:flex-row items-center justify-between gap-12 lg:py-20">
         
         {/* Left Content */}
         <div className="flex-1 flex flex-col items-start max-w-3xl">
-          <h2 className="hero-subtitle text-accent font-medium tracking-[0.2em] uppercase text-sm mb-6">
+          <h2 className="hero-subtitle text-accent font-medium tracking-widest uppercase text-[10px] min-[375px]:text-xs sm:text-sm mb-6 whitespace-nowrap">
             Design Engineer & Consultant IT
           </h2>
           
@@ -96,7 +96,7 @@ export default function Hero() {
         {/* Right Content - Portrait : positionné en absolu pour couvrir toute la moitié droite */}
         <div className="hero-image hidden lg:block absolute top-0 right-0 bottom-[56px] w-[65%] xl:w-[60%] pointer-events-none z-[5]">
           {/* Lueur accent derrière */}
-          <div className="absolute inset-0 bg-accent/8 blur-[100px] rounded-full pointer-events-none scale-75 translate-y-10"></div>
+          <div className="absolute inset-0 rounded-full pointer-events-none scale-75 translate-y-10" style={{ background: 'radial-gradient(circle, rgba(0,168,204,0.12) 0%, transparent 70%)' }}></div>
           {/* Image avec masque pour fondu gauche + bas */}
           <img 
             src="/images/portrait.png" 
@@ -112,16 +112,16 @@ export default function Hero() {
         </div>
 
         {/* Portrait Mobile & Tablette uniquement */}
-        <div className="hero-image lg:hidden w-full flex justify-center mt-12 mb-4 relative">
-          <div className="absolute inset-0 bg-accent/5 blur-[80px] rounded-full pointer-events-none"></div>
+        <div className="hero-image lg:hidden w-full flex justify-center mt-6 mb-0 relative">
+          <div className="absolute inset-0 rounded-full pointer-events-none scale-125" style={{ background: 'radial-gradient(circle, rgba(0,168,204,0.15) 0%, transparent 70%)' }}></div>
           <img 
             src="/images/portrait.png" 
             alt="Portrait de Fred Williams" 
-            className="relative z-10 w-[95%] max-w-[420px] sm:max-w-[550px] h-auto object-contain scale-110 sm:scale-125 origin-bottom"
+            className="relative z-10 w-full max-w-[500px] sm:max-w-[650px] h-auto object-contain scale-[1.25] sm:scale-[1.35] origin-bottom translate-y-6"
             style={{
-              maskImage: 'linear-gradient(to bottom, black 60%, transparent 100%), linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%)',
+              maskImage: 'linear-gradient(to bottom, black 60%, transparent 100%), linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%)',
               maskComposite: 'intersect',
-              WebkitMaskImage: 'linear-gradient(to bottom, black 60%, transparent 100%), linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%)',
+              WebkitMaskImage: 'linear-gradient(to bottom, black 60%, transparent 100%), linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%)',
               WebkitMaskComposite: 'source-in'
             }}
           />

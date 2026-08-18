@@ -25,45 +25,48 @@ function App() {
     
     requestAnimationFrame(raf)
 
-    // Transitions globales des sections (Flou et Fondu au scroll)
-    const sections = document.querySelectorAll('section');
-    sections.forEach((section, index) => {
-      // Effet d'entrée (Flou -> Net) pour toutes les sections sauf la première (Hero)
-      if (index > 0) {
+    const ctx = gsap.context(() => {
+      // Transitions globales des sections (Flou et Fondu au scroll)
+      const sections = document.querySelectorAll('section');
+      sections.forEach((section, index) => {
+        // Effet d'entrée (Flou -> Net) pour toutes les sections sauf la première (Hero)
+        if (index > 0) {
+          gsap.fromTo(section, 
+            { opacity: 0.2, filter: "blur(15px)", y: 50 },
+            { 
+              opacity: 1, 
+              filter: "blur(0px)", 
+              y: 0,
+              scrollTrigger: {
+                trigger: section,
+                start: "top 85%", 
+                end: "top 25%",   
+                scrub: 1
+              }
+            }
+          );
+        }
+
+        // Effet de sortie (Net -> Flou) pour toutes les sections
         gsap.fromTo(section, 
-          { opacity: 0, filter: "blur(15px)", y: 50 },
+          { opacity: 1, filter: "blur(0px)" },
           { 
-            opacity: 1, 
-            filter: "blur(0px)", 
-            y: 0,
+            opacity: 0.2, 
+            filter: "blur(15px)",
             scrollTrigger: {
               trigger: section,
-              start: "top 85%", 
-              end: "top 25%",   
+              start: "bottom 30%",
+              end: "bottom 0%",   
               scrub: 1
             }
           }
         );
-      }
-
-      // Effet de sortie (Net -> Flou) pour toutes les sections
-      gsap.fromTo(section, 
-        { opacity: 1, filter: "blur(0px)" },
-        { 
-          opacity: 0, 
-          filter: "blur(15px)",
-          scrollTrigger: {
-            trigger: section,
-            start: "bottom 30%",
-            end: "bottom 0%",   
-            scrub: 1
-          }
-        }
-      );
+      });
     });
 
     return () => {
-      lenis.destroy()
+      lenis.destroy();
+      ctx.revert(); // Nettoyage de GSAP pour éviter les bugs au rechargement
     }
   }, [])
 

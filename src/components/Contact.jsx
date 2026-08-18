@@ -72,7 +72,7 @@ export default function Contact() {
 
             <div className="contact-info-reveal mb-8">
               <p className="text-white/50 text-sm uppercase tracking-widest mb-2 font-medium">Email Direct</p>
-              <a href="mailto:williams.informatic@proton.me" className="text-2xl sm:text-3xl font-light text-white hover:text-accent transition-colors duration-300 break-all">
+              <a href="mailto:williams.informatic@proton.me" className="text-lg sm:text-2xl lg:text-3xl font-light text-white hover:text-accent transition-colors duration-300">
                 williams.informatic@proton.me
               </a>
             </div>

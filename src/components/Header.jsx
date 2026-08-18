@@ -46,14 +46,14 @@ export default function Header() {
             <img 
               src="/logo.png" 
               alt="Logo Williams Biamou" 
-              className="h-16 md:h-20 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+              className="h-10 md:h-20 w-auto max-w-[60vw] md:max-w-none object-contain transition-transform duration-300 group-hover:scale-105"
               onError={(e) => {
                 // Fallback text if logo isn't found
                 e.target.style.display = 'none';
                 e.target.nextSibling.style.display = 'block';
               }}
             />
-            <span className="hidden text-xl font-serif font-bold text-white tracking-wide">
+            <span className="hidden text-xl font-serif font-bold text-white tracking-wide whitespace-nowrap">
               Williams <span className="text-accent">.</span>
             </span>
           </a>
