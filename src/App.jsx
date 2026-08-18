@@ -16,49 +16,52 @@ gsap.registerPlugin(ScrollTrigger)
 
 function App() {
   useEffect(() => {
-    const lenis = new Lenis()
-    
-    function raf(time) {
-      lenis.raf(time)
-      requestAnimationFrame(raf)
-    }
-    
-    requestAnimationFrame(raf)
+    // Configuration Lenis optimisée pour mobile et synchronisée avec GSAP
+    const lenis = new Lenis({
+      smoothWheel: true,
+      syncTouch: true // Aide à synchroniser sur mobile
+    });
+
+    lenis.on('scroll', ScrollTrigger.update);
+
+    gsap.ticker.add((time) => {
+      lenis.raf(time * 1000);
+    });
+
+    gsap.ticker.lagSmoothing(0);
 
     const ctx = gsap.context(() => {
       // Transitions globales des sections (Flou et Fondu au scroll)
       const sections = document.querySelectorAll('section');
       sections.forEach((section, index) => {
-        // Effet d'entrée (Flou -> Net) pour toutes les sections sauf la première (Hero)
-        // L'entrée commence quand le haut de la section atteint 80% de l'écran, et finit à 20%
+        // Effet d'entrée (Flou -> Net)
         if (index > 0) {
           gsap.fromTo(section, 
-            { opacity: 0.4, filter: "blur(10px)", y: 40 },
+            { opacity: 0.3, filter: "blur(10px)", y: 40 },
             { 
               opacity: 1, 
               filter: "blur(0px)", 
               y: 0,
               scrollTrigger: {
                 trigger: section,
-                start: "top 80%", 
-                end: "top 20%",   
+                start: "top 85%", // Commence quand le haut arrive en bas de l'écran
+                end: "top 50%",   // Finit très vite (à la moitié de l'écran), donc l'image est claire rapidement
                 scrub: 1
               }
             }
           );
         }
 
-        // Effet de sortie (Net -> Flou) pour toutes les sections
-        // La sortie commence quand le bas de la section atteint 80% (synchronisé avec l'entrée de la suivante)
+        // Effet de sortie (Net -> Flou)
         gsap.fromTo(section, 
           { opacity: 1, filter: "blur(0px)" },
           { 
-            opacity: 0.4, 
+            opacity: 0.3, 
             filter: "blur(10px)",
             scrollTrigger: {
               trigger: section,
-              start: "bottom 80%",
-              end: "bottom 20%",   
+              start: "bottom 50%", // Ne commence à se flouter QUE quand la section est à moitié sortie
+              end: "bottom 0%",   // Finit de flouter quand elle est totalement sortie
               scrub: 1
             }
           }
