@@ -144,8 +144,8 @@ export default function About() {
                   {/* Timeline Dot */}
                   <div className="absolute -left-[5px] top-2 w-2.5 h-2.5 rounded-full bg-accent ring-4 ring-background" />
                   
-                  <div className="flex items-center gap-3 mb-2 flex-nowrap overflow-hidden">
-                    <h5 className="text-xl font-semibold text-white whitespace-nowrap truncate">{exp.title}</h5>
+                  <div className="flex items-center gap-3 mb-2 flex-wrap">
+                    <h5 className="text-xl font-semibold text-white">{exp.title}</h5>
                     <span className="text-accent/80 text-xs sm:text-sm font-medium px-2 py-1 bg-accent/10 rounded-full shrink-0 hidden sm:inline-block">{exp.company}</span>
                   </div>
                   <div className="flex items-center gap-2 mb-4">
