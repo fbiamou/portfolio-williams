@@ -30,17 +30,18 @@ function App() {
       const sections = document.querySelectorAll('section');
       sections.forEach((section, index) => {
         // Effet d'entrée (Flou -> Net) pour toutes les sections sauf la première (Hero)
+        // L'entrée commence quand le haut de la section atteint 80% de l'écran, et finit à 20%
         if (index > 0) {
           gsap.fromTo(section, 
-            { opacity: 0.2, filter: "blur(15px)", y: 50 },
+            { opacity: 0.4, filter: "blur(10px)", y: 40 },
             { 
               opacity: 1, 
               filter: "blur(0px)", 
               y: 0,
               scrollTrigger: {
                 trigger: section,
-                start: "top 85%", 
-                end: "top 25%",   
+                start: "top 80%", 
+                end: "top 20%",   
                 scrub: 1
               }
             }
@@ -48,15 +49,16 @@ function App() {
         }
 
         // Effet de sortie (Net -> Flou) pour toutes les sections
+        // La sortie commence quand le bas de la section atteint 80% (synchronisé avec l'entrée de la suivante)
         gsap.fromTo(section, 
           { opacity: 1, filter: "blur(0px)" },
           { 
-            opacity: 0.2, 
-            filter: "blur(15px)",
+            opacity: 0.4, 
+            filter: "blur(10px)",
             scrollTrigger: {
               trigger: section,
-              start: "bottom 30%",
-              end: "bottom 0%",   
+              start: "bottom 80%",
+              end: "bottom 20%",   
               scrub: 1
             }
           }
