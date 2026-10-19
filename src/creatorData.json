@@ -1,0 +1,645 @@
+{
+ "videos": [
+  {
+   "id": 13,
+   "title": "Pack brillo y antimanchas",
+   "series": "BossMama",
+   "lang": "es",
+   "v": "creator/v/13.mp4",
+   "poster": "creator/v/13.jpg",
+   "client": true,
+   "size": 5204381
+  },
+  {
+   "id": 10,
+   "title": "Peluca · vídeo 1",
+   "series": "BossMama",
+   "lang": "es",
+   "v": "creator/v/10.mp4",
+   "poster": "creator/v/10.jpg",
+   "client": true,
+   "size": 6534872
+  },
+  {
+   "id": 11,
+   "title": "Peluca · vídeo 2",
+   "series": "BossMama",
+   "lang": "es",
+   "v": "creator/v/11.mp4",
+   "poster": "creator/v/11.jpg",
+   "client": true,
+   "size": 3877835
+  },
+  {
+   "id": 12,
+   "title": "Presentación de tienda",
+   "series": "BossMama",
+   "lang": "es",
+   "v": "creator/v/12.mp4",
+   "poster": "creator/v/12.jpg",
+   "client": true,
+   "size": 2726086
+  },
+  {
+   "id": 43,
+   "title": "Presentación de tienda (estudio)",
+   "series": "BossMama",
+   "lang": "es",
+   "v": "creator/v/43.mp4",
+   "poster": "creator/v/43.jpg",
+   "client": true,
+   "size": 3831952
+  },
+  {
+   "id": 31,
+   "title": "Cápsula 1",
+   "series": "Cápsulas TikTok",
+   "lang": "es",
+   "v": "creator/v/31.mp4",
+   "poster": "creator/v/31.jpg",
+   "client": false,
+   "size": 8000765
+  },
+  {
+   "id": 32,
+   "title": "Cápsula 2",
+   "series": "Cápsulas TikTok",
+   "lang": "es",
+   "v": "creator/v/32.mp4",
+   "poster": "creator/v/32.jpg",
+   "client": false,
+   "size": 9680443
+  },
+  {
+   "id": 33,
+   "title": "Cápsula 3",
+   "series": "Cápsulas TikTok",
+   "lang": "es",
+   "v": "creator/v/33.mp4",
+   "poster": "creator/v/33.jpg",
+   "client": false,
+   "size": 9489994
+  },
+  {
+   "id": 34,
+   "title": "Cómo ser creativo",
+   "series": "Cápsulas TikTok",
+   "lang": "es",
+   "v": "creator/v/34.mp4",
+   "poster": "creator/v/34.jpg",
+   "client": false,
+   "size": 3628705
+  },
+  {
+   "id": 39,
+   "title": "Presentación",
+   "series": "TikTok",
+   "lang": "es",
+   "v": "creator/v/39.mp4",
+   "poster": "creator/v/39.jpg",
+   "client": false,
+   "size": 2918354
+  },
+  {
+   "id": 37,
+   "title": "Vídeo corto",
+   "series": "TikTok",
+   "lang": "es",
+   "v": "creator/v/37.mp4",
+   "poster": "creator/v/37.jpg",
+   "client": false,
+   "size": 714155
+  },
+  {
+   "id": 40,
+   "title": "Diseño de cárteles · 1",
+   "series": "TikTok",
+   "lang": "es",
+   "v": "creator/v/40.mp4",
+   "poster": "creator/v/40.jpg",
+   "client": false,
+   "size": 3587938
+  },
+  {
+   "id": 41,
+   "title": "Diseño de cárteles · 2",
+   "series": "TikTok",
+   "lang": "es",
+   "v": "creator/v/41.mp4",
+   "poster": "creator/v/41.jpg",
+   "client": false,
+   "size": 4891569
+  },
+  {
+   "id": 42,
+   "title": "ChatGPT no te ayuda",
+   "series": "TikTok",
+   "lang": "es",
+   "v": "creator/v/42.mp4",
+   "poster": "creator/v/42.jpg",
+   "client": false,
+   "size": 5106378
+  },
+  {
+   "id": 81,
+   "title": "Producto digital",
+   "series": "TikTok",
+   "lang": "fr",
+   "v": "creator/v/81.mp4",
+   "poster": "creator/v/81.jpg",
+   "client": false,
+   "size": 3651138
+  },
+  {
+   "id": 84,
+   "title": "Contenido personal",
+   "series": "TikTok",
+   "lang": "fr",
+   "v": "creator/v/84.mp4",
+   "poster": "creator/v/84.jpg",
+   "client": false,
+   "size": 5799913
+  },
+  {
+   "id": 93,
+   "title": "Mensaje 12 de agosto",
+   "series": "TikTok",
+   "lang": "fr",
+   "v": "creator/v/93.mp4",
+   "poster": "creator/v/93.jpg",
+   "client": false,
+   "size": 2089812
+  },
+  {
+   "id": 114,
+   "title": "Williams Informatic",
+   "series": "TikTok",
+   "lang": "fr",
+   "v": "creator/v/114.mp4",
+   "poster": "creator/v/114.jpg",
+   "client": false,
+   "size": 746982
+  },
+  {
+   "id": 236,
+   "title": "Reel: 3 errores",
+   "series": "Reels y demos",
+   "lang": "fr",
+   "v": "creator/v/236.mp4",
+   "poster": "creator/v/236.jpg",
+   "client": false,
+   "size": 855849
+  },
+  {
+   "id": 237,
+   "title": "Reel: 3 errores (v2)",
+   "series": "Reels y demos",
+   "lang": "fr",
+   "v": "creator/v/237.mp4",
+   "poster": "creator/v/237.jpg",
+   "client": false,
+   "size": 2977246
+  },
+  {
+   "id": 410,
+   "title": "Demo Wishop",
+   "series": "Reels y demos",
+   "lang": "es",
+   "v": "creator/v/410.mp4",
+   "poster": "creator/v/410.jpg",
+   "client": false,
+   "size": 2233465
+  },
+  {
+   "id": 386,
+   "title": "Showreel Williams Informatic",
+   "series": "Reels y demos",
+   "lang": "es",
+   "v": "creator/v/386.mp4",
+   "poster": "creator/v/386.jpg",
+   "client": false,
+   "size": 1913749
+  },
+  {
+   "id": 351,
+   "title": "Demo portal de formación",
+   "series": "Reels y demos",
+   "lang": "fr",
+   "v": "creator/v/351.mp4",
+   "poster": "creator/v/351.jpg",
+   "client": false,
+   "size": 3260693
+  },
+  {
+   "id": 9,
+   "title": "Story book animado infantil",
+   "series": "Reels y demos",
+   "lang": "fr",
+   "v": "creator/v/9.mp4",
+   "poster": "creator/v/9.jpg",
+   "client": false,
+   "size": 1706565
+  }
+ ],
+ "images": [
+  {
+   "group": "brand",
+   "brand": "Freshlady Home",
+   "kind": "Logo",
+   "src": "creator/i/121.jpg",
+   "lang": null
+  },
+  {
+   "group": "brand",
+   "brand": "Freshlady Home",
+   "kind": "Logo",
+   "src": "creator/i/122.jpg",
+   "lang": null
+  },
+  {
+   "group": "brand",
+   "brand": "Freshlady Home",
+   "kind": "Logo",
+   "src": "creator/i/123.jpg",
+   "lang": null
+  },
+  {
+   "group": "brand",
+   "brand": "Freshlady Home",
+   "kind": "Logo",
+   "src": "creator/i/124.jpg",
+   "lang": null
+  },
+  {
+   "group": "brand",
+   "brand": "Freshlady Home",
+   "kind": "Logo",
+   "src": "creator/i/131.jpg",
+   "lang": null
+  },
+  {
+   "group": "brand",
+   "brand": "Freshlady Home",
+   "kind": "Logo",
+   "src": "creator/i/132.jpg",
+   "lang": null
+  },
+  {
+   "group": "brand",
+   "brand": "Williams Informatic",
+   "kind": "Logo",
+   "src": "creator/i/162.jpg",
+   "lang": null
+  },
+  {
+   "group": "brand",
+   "brand": "Williams Informatic",
+   "kind": "Logo",
+   "src": "creator/i/163.jpg",
+   "lang": null
+  },
+  {
+   "group": "brand",
+   "brand": "Tevo",
+   "kind": "Logo",
+   "src": "creator/i/164.jpg",
+   "lang": "es"
+  },
+  {
+   "group": "brand",
+   "brand": "Tevo",
+   "kind": "Flyers",
+   "src": "creator/i/167.jpg",
+   "lang": "es"
+  },
+  {
+   "group": "brand",
+   "brand": "Tevo",
+   "kind": "Flyers",
+   "src": "creator/i/168.jpg",
+   "lang": "es"
+  },
+  {
+   "group": "brand",
+   "brand": "Tevo",
+   "kind": "Flyers",
+   "src": "creator/i/171.jpg",
+   "lang": "es"
+  },
+  {
+   "group": "brand",
+   "brand": "Tevo",
+   "kind": "Flyers",
+   "src": "creator/i/172.jpg",
+   "lang": "es"
+  },
+  {
+   "group": "brand",
+   "brand": "Tevo",
+   "kind": "Flyers",
+   "src": "creator/i/174.jpg",
+   "lang": "es"
+  },
+  {
+   "group": "brand",
+   "brand": "NJ Impact",
+   "kind": "Flyers",
+   "src": "creator/i/178.jpg",
+   "lang": null
+  },
+  {
+   "group": "brand",
+   "brand": "Tech Community",
+   "kind": "Flyers",
+   "src": "creator/i/180.jpg",
+   "lang": null
+  },
+  {
+   "group": "brand",
+   "brand": "Tech Community",
+   "kind": "Flyers",
+   "src": "creator/i/181.jpg",
+   "lang": null
+  },
+  {
+   "group": "brand",
+   "brand": "Williams Informatic",
+   "kind": "Bannière YouTube",
+   "src": "creator/i/197.jpg",
+   "lang": null
+  },
+  {
+   "group": "brand",
+   "brand": "Tech Community",
+   "kind": "Mockups",
+   "src": "creator/i/206.jpg",
+   "lang": null
+  },
+  {
+   "group": "brand",
+   "brand": "Tech Community",
+   "kind": "Mockups",
+   "src": "creator/i/207.jpg",
+   "lang": null
+  },
+  {
+   "group": "brand",
+   "brand": "Tech Community",
+   "kind": "Mockups",
+   "src": "creator/i/208.jpg",
+   "lang": null
+  },
+  {
+   "group": "brand",
+   "brand": "Tech Community",
+   "kind": "Mockups",
+   "src": "creator/i/209.jpg",
+   "lang": null
+  },
+  {
+   "group": "brand",
+   "brand": "Tech Community",
+   "kind": "Mockups",
+   "src": "creator/i/210.jpg",
+   "lang": null
+  },
+  {
+   "group": "posts",
+   "brand": "Facebook",
+   "kind": "Posts",
+   "src": "creator/i/211.jpg",
+   "lang": "fr"
+  },
+  {
+   "group": "posts",
+   "brand": "Facebook",
+   "kind": "Posts",
+   "src": "creator/i/212.jpg",
+   "lang": "fr"
+  },
+  {
+   "group": "posts",
+   "brand": "Facebook",
+   "kind": "Posts",
+   "src": "creator/i/213.jpg",
+   "lang": "fr"
+  },
+  {
+   "group": "posts",
+   "brand": "Facebook",
+   "kind": "Posts",
+   "src": "creator/i/214.jpg",
+   "lang": "fr"
+  },
+  {
+   "group": "posts",
+   "brand": "Facebook",
+   "kind": "Posts",
+   "src": "creator/i/215.jpg",
+   "lang": "fr"
+  },
+  {
+   "group": "posts",
+   "brand": "Facebook",
+   "kind": "Posts",
+   "src": "creator/i/216.jpg",
+   "lang": "fr"
+  },
+  {
+   "group": "posts",
+   "brand": "Facebook",
+   "kind": "Posts",
+   "src": "creator/i/217.jpg",
+   "lang": "fr"
+  },
+  {
+   "group": "posts",
+   "brand": "Facebook",
+   "kind": "Posts",
+   "src": "creator/i/218.jpg",
+   "lang": "fr"
+  },
+  {
+   "group": "posts",
+   "brand": "Facebook",
+   "kind": "Posts",
+   "src": "creator/i/219.jpg",
+   "lang": "fr"
+  },
+  {
+   "group": "posts",
+   "brand": "Visuels",
+   "kind": "Posts",
+   "src": "creator/i/227.jpg",
+   "lang": "fr"
+  },
+  {
+   "group": "posts",
+   "brand": "Visuels",
+   "kind": "Posts",
+   "src": "creator/i/228.jpg",
+   "lang": "fr"
+  },
+  {
+   "group": "posts",
+   "brand": "Visuels",
+   "kind": "Posts",
+   "src": "creator/i/229.jpg",
+   "lang": "fr"
+  },
+  {
+   "group": "brand",
+   "brand": "Williams Informatic",
+   "kind": "Logo",
+   "src": "projects/wi/logo-blanc.jpg",
+   "lang": null
+  },
+  {
+   "group": "brand",
+   "brand": "JONME",
+   "kind": "Logo",
+   "src": "projects/jonme/logo-dark.jpg",
+   "lang": null
+  },
+  {
+   "group": "brand",
+   "brand": "JONME",
+   "kind": "Logo",
+   "src": "projects/jonme/logo.jpg",
+   "lang": null
+  },
+  {
+   "group": "brand",
+   "brand": "JONME",
+   "kind": "Catálogo",
+   "src": "projects/jonme/cat10.jpg",
+   "lang": null
+  },
+  {
+   "group": "brand",
+   "brand": "JONME",
+   "kind": "Catálogo",
+   "src": "projects/jonme/cat11.jpg",
+   "lang": null
+  },
+  {
+   "group": "brand",
+   "brand": "JONME",
+   "kind": "Catálogo",
+   "src": "projects/jonme/cat13.jpg",
+   "lang": null
+  },
+  {
+   "group": "brand",
+   "brand": "JONME",
+   "kind": "Catálogo",
+   "src": "projects/jonme/cat14.jpg",
+   "lang": null
+  },
+  {
+   "group": "brand",
+   "brand": "JONME",
+   "kind": "Catálogo",
+   "src": "projects/jonme/cat15.jpg",
+   "lang": null
+  },
+  {
+   "group": "brand",
+   "brand": "JONME",
+   "kind": "Catálogo",
+   "src": "projects/jonme/cat16.jpg",
+   "lang": null
+  },
+  {
+   "group": "brand",
+   "brand": "JONME",
+   "kind": "Catálogo",
+   "src": "projects/jonme/cat17.jpg",
+   "lang": null
+  },
+  {
+   "group": "brand",
+   "brand": "JONME",
+   "kind": "Catálogo",
+   "src": "projects/jonme/cat19.jpg",
+   "lang": null
+  },
+  {
+   "group": "brand",
+   "brand": "JONME",
+   "kind": "Mockups",
+   "src": "projects/jonme/phonemock.jpg",
+   "lang": null
+  },
+  {
+   "group": "brand",
+   "brand": "JONME",
+   "kind": "Mockups",
+   "src": "projects/jonme/vinylmock.jpg",
+   "lang": null
+  }
+ ],
+ "carousels": [
+  {
+   "title": "formation claude ai",
+   "lang": "fr",
+   "slides": [
+    "creator/i/c231_00.jpg",
+    "creator/i/c231_01.jpg",
+    "creator/i/c231_02.jpg",
+    "creator/i/c231_03.jpg",
+    "creator/i/c231_04.jpg",
+    "creator/i/c231_05.jpg",
+    "creator/i/c231_06.jpg",
+    "creator/i/c231_07.jpg"
+   ]
+  },
+  {
+   "title": "logo seul ne suffit pas",
+   "lang": "fr",
+   "slides": [
+    "creator/i/c232_00.jpg",
+    "creator/i/c232_01.jpg",
+    "creator/i/c232_02.jpg",
+    "creator/i/c232_03.jpg",
+    "creator/i/c232_04.jpg",
+    "creator/i/c232_05.jpg",
+    "creator/i/c232_06.jpg",
+    "creator/i/c232_07.jpg",
+    "creator/i/c232_08.jpg"
+   ]
+  },
+  {
+   "title": "produit digital facebook ads",
+   "lang": "fr",
+   "slides": [
+    "creator/i/c233_00.jpg",
+    "creator/i/c233_01.jpg",
+    "creator/i/c233_02.jpg",
+    "creator/i/c233_03.jpg",
+    "creator/i/c233_04.jpg",
+    "creator/i/c233_05.jpg",
+    "creator/i/c233_06.jpg",
+    "creator/i/c233_07.jpg",
+    "creator/i/c233_08.jpg"
+   ]
+  },
+  {
+   "title": "saas sur mesure commercants",
+   "lang": "fr",
+   "slides": [
+    "creator/i/c235_00.jpg",
+    "creator/i/c235_01.jpg",
+    "creator/i/c235_02.jpg",
+    "creator/i/c235_03.jpg",
+    "creator/i/c235_04.jpg",
+    "creator/i/c235_05.jpg",
+    "creator/i/c235_06.jpg",
+    "creator/i/c235_07.jpg",
+    "creator/i/c235_08.jpg",
+    "creator/i/c235_09.jpg",
+    "creator/i/c235_10.jpg"
+   ]
+  }
+ ]
+}
