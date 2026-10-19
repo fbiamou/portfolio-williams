@@ -1,16 +1,25 @@
-# React + Vite
+# Portfolio — Williams Biamou (Williams Informatic)
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Page unique React + Vite, trilingue (FR / ES / EN), en ligne sur https://portfolio-williams-neon.vercel.app (déploiement automatique Vercel à chaque push sur `main`).
 
-Currently, two official plugins are available:
+## Contenu
+- **Hero cinématique** piloté au défilement : vidéo 3D rendue avec Blender puis encodée avec ffmpeg (`public/hero/scrub.mp4`). Repli en image fixe sur téléphone, tablette portrait et si « réduire les animations » est actif.
+- **Projets et créations** en cartes-dossiers cliquables (vidéos, marques, posts) avec carrousels en diaporama (clic, flèches, swipe).
+- **Traductions** FR / ES / EN : textes dans `src/data.js` et `src/projects.js`.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Structure
+- `src/Film.jsx` : hero au défilement (réexporté comme `Hero` par `sections.jsx`)
+- `src/sections.jsx`, `Work.jsx`, `Content.jsx` : sections, projets, contenus
+- `src/data.js`, `projects.js`, `creatorData.json` : données et traductions
+- `tools/hero-film/scene.py` : scène Blender du hero
 
-## React Compiler
+## Commandes
+```bash
+npm install
+npm run dev      # aperçu local
+npm run build    # build de production (dist/)
+npm run lint
+```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Régénérer le film du hero
+`blender -b -P tools/hero-film/scene.py -- <dossier_absolu>/frames 1600 900 150`, puis ffmpeg (glow `gbrp`, `-g 8`, `crf 24`, `start_number 24`).

@@ -8,7 +8,7 @@
 ## Contenu
 - **Textes :** En attente de réception (à fournir via fichier/lien). Les textes réels seront insérés dès réception, sans utiliser de placeholders génériques.
 - **CV PDF :** Oui, un CV PDF sera proposé en téléchargement.
-- **Langue :** Français uniquement.
+- **Langue :** Français, espagnol et anglais (page unique trilingue).
 
 ## Direction Artistique
 - **Références citées :** À fournir par l'utilisateur (sera mis à jour dès réception).
